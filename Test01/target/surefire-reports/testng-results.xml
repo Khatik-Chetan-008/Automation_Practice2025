@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-22T11:45:01 IST" name="Registration and Login Test Suite" finished-at="2025-07-22T11:45:44 IST" duration-ms="42333">
+    <groups>
+    </groups>
+    <test started-at="2025-07-22T11:45:01 IST" name="User Authentication Tests" finished-at="2025-07-22T11:45:44 IST" duration-ms="42333">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:28 IST" name="setup" finished-at="2025-07-22T11:45:33 IST" duration-ms="5307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setBefore()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:33 IST" name="setBefore" finished-at="2025-07-22T11:45:33 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBefore -->
+        <test-method signature="loginWithInvalidCredentials()[pri:1, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:33 IST" name="loginWithInvalidCredentials" finished-at="2025-07-22T11:45:37 IST" duration-ms="3960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="setBefore()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:37 IST" name="setBefore" finished-at="2025-07-22T11:45:37 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBefore -->
+        <test-method signature="loginWithValidCredentials()[pri:2, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:37 IST" name="loginWithValidCredentials" finished-at="2025-07-22T11:45:41 IST" duration-ms="3782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method signature="logoutUser()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:41 IST" name="logoutUser" finished-at="2025-07-22T11:45:43 IST" depends-on-methods="tests.LoginTest.loginWithValidCredentials" duration-ms="1987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutUser -->
+        <test-method is-config="true" signature="setBefore()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:41 IST" name="setBefore" finished-at="2025-07-22T11:45:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBefore -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@5812f68b]" started-at="2025-07-22T11:45:43 IST" name="tearDown" finished-at="2025-07-22T11:45:44 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegisterUserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:01 IST" name="setup" finished-at="2025-07-22T11:45:09 IST" duration-ms="7534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setBeforeData()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:09 IST" name="setBeforeData" finished-at="2025-07-22T11:45:09 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBeforeData -->
+        <test-method signature="signUpUser()[pri:1, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:09 IST" name="signUpUser" finished-at="2025-07-22T11:45:14 IST" duration-ms="5315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpUser -->
+        <test-method signature="fillAndConfirmRegistrationDetails()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:14 IST" name="fillAndConfirmRegistrationDetails" finished-at="2025-07-22T11:45:21 IST" depends-on-methods="tests.RegisterUserTest.signUpUser" duration-ms="6568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillAndConfirmRegistrationDetails -->
+        <test-method is-config="true" signature="setBeforeData()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:14 IST" name="setBeforeData" finished-at="2025-07-22T11:45:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBeforeData -->
+        <test-method is-config="true" signature="setBeforeData()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:21 IST" name="setBeforeData" finished-at="2025-07-22T11:45:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBeforeData -->
+        <test-method signature="verifyLoggedInUserName()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:21 IST" name="verifyLoggedInUserName" finished-at="2025-07-22T11:45:25 IST" depends-on-methods="tests.RegisterUserTest.fillAndConfirmRegistrationDetails" duration-ms="4152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoggedInUserName -->
+        <test-method signature="signupWithExistingEmail()[pri:2, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:25 IST" name="signupWithExistingEmail" finished-at="2025-07-22T11:45:28 IST" duration-ms="2850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupWithExistingEmail -->
+        <test-method is-config="true" signature="setBeforeData()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:25 IST" name="setBeforeData" finished-at="2025-07-22T11:45:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBeforeData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterUserTest@3ad2e17]" started-at="2025-07-22T11:45:28 IST" name="tearDown" finished-at="2025-07-22T11:45:28 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterUserTest -->
+    </test> <!-- User Authentication Tests -->
+  </suite> <!-- Registration and Login Test Suite -->
+</testng-results>
