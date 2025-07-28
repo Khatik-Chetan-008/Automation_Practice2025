@@ -1,11 +1,13 @@
 package tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import main.BaseClass;
 import main.RegisterUserPage;
+@Listeners(utilities.ScreenshotListener.class)
 
 public class RegisterUserTest extends BaseClass{
 

@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	protected WebDriver driver;
+	public static WebDriver driver;
 	@BeforeClass
 	public void setup()
 	{

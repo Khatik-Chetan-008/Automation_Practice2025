@@ -1,12 +1,14 @@
 package tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import main.BaseClass;
 import main.LoginPage;
 
+@Listeners(utilities.ScreenshotListener.class)
 public class LoginTest extends BaseClass{
 
 	LoginPage login;
@@ -23,7 +25,7 @@ public class LoginTest extends BaseClass{
 		SoftAssert softAssert= new SoftAssert();	
 		login.clickSignup();
 		login.enterLoginEmail("Ganesh7@mailinator.com");
-		login.enterLoginPassword("Test@12");
+		login.enterLoginPassword("Test@123");
 		login.clickAndVerifyLoginBtn();
 		String actualLoginErrorMsg=login.checkLoginErrorMsg();
 		softAssert.assertEquals(actualLoginErrorMsg, "Your email or password is incorrect!","Wrong msg displayed");
