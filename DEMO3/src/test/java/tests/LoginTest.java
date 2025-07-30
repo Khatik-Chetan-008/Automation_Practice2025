@@ -25,7 +25,7 @@ public class LoginTest extends BaseClass{
 		SoftAssert softAssert= new SoftAssert();	
 		login.clickSignup();
 		login.enterLoginEmail("Ganesh7@mailinator.com");
-		login.enterLoginPassword("Test@123");
+		login.enterLoginPassword("Test@12");
 		login.clickAndVerifyLoginBtn();
 		String actualLoginErrorMsg=login.checkLoginErrorMsg();
 		softAssert.assertEquals(actualLoginErrorMsg, "Your email or password is incorrect!","Wrong msg displayed");
